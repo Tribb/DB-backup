@@ -3,7 +3,9 @@ Backup
 
 ## Synopsis
 Backs up your PS4's databases. Removed all the useless stuff when you just need a quick db Backup, You
- can use the original for saves. For the payloads built with the most recent firmware supported visit [this repo].
+ can use the original for saves. If no usb used then local backups are made
+ 
+ For the payloads built with the most recent firmware supported visit [this repo].
 
 ## Notes
 - Contribute translations for the decription in `meta.json`
