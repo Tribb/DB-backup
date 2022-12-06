@@ -49,6 +49,8 @@ int _main(struct thread *td) {
       copy_file("/system_data/priv/mms/app.db", "/mnt/usb1/PS4/Backup/app.db");
       copy_file("/system_data/priv/mms/addcont.db", "/mnt/usb1/PS4/Backup/addcont.db");
       copy_file("/system_data/priv/mms/av_content_bg.db", "/mnt/usb1/PS4/Backup/av_content_bg.db");
+      copy_file("/user/system/webkit/secure/appcache/ApplicationCache.db", "/mnt/usb1/PS4/Backup/ApplicationCache.dbsec");
+      copy_file("/user/system/webkit/webbrowser/appcache/ApplicationCache.db", "/mnt/usb1/PS4/Backup/ApplicationCache.db");
       printf_notification("USB backup complete!");
     }
   } else {
@@ -61,6 +63,8 @@ int _main(struct thread *td) {
     copy_file("/system_data/priv/mms/app.db", "/mnt/usb0/PS4/Backup/app.db");
     copy_file("/system_data/priv/mms/addcont.db", "/mnt/usb0/PS4/Backup/addcont.db");
     copy_file("/system_data/priv/mms/av_content_bg.db", "/mnt/usb0/PS4/Backup/av_content_bg.db");
+    copy_file("/user/system/webkit/secure/appcache/ApplicationCache.db", "/mnt/usb0/PS4/Backup/ApplicationCache.dbsec");
+    copy_file("/user/system/webkit/webbrowser/appcache/ApplicationCache.db", "/mnt/usb0/PS4/Backup/ApplicationCache.db");
     printf_notification("USB backup complete!");
   }
 
