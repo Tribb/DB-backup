@@ -1,6 +1,5 @@
 Backup
 ===
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/)](https://www.codacy.com/gh/Scene-Collective/ps4-backup/dashboard)
 
 ## Synopsis
 Backs up your PS4's databases. Removed all the useless stuff when you just need a quick db Backup, You
