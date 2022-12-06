@@ -49,33 +49,6 @@ int _main(struct thread *td) {
       copy_file("/system_data/priv/mms/app.db", "/mnt/usb1/PS4/Backup/app.db");
       copy_file("/system_data/priv/mms/addcont.db", "/mnt/usb1/PS4/Backup/addcont.db");
       copy_file("/system_data/priv/mms/av_content_bg.db", "/mnt/usb1/PS4/Backup/av_content_bg.db");
-      mkdir("/mnt/usb1/PS4/Backup/UserData/", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/system_data/", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/system_data/savedata", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/system_data/priv", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/system_data/priv/home", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/system_data/priv/license", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/system_data/priv/activation", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/home/", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/trophy", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/license", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/settings", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/system", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/system/webkit", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/system/webkit/secure", 0777);
-      mkdir("/mnt/usb1/PS4/Backup/UserData/user/system/webkit/webbrowser", 0777);
-      printf_notification("Copying user data\nPlease wait...");
-      copy_dir("/system_data/savedata", "/mnt/usb1/PS4/Backup/UserData/system_data/savedata");
-      copy_dir("/user/home", "/mnt/usb1/PS4/Backup/UserData/user/home");
-      copy_dir("/user/trophy", "/mnt/usb1/PS4/Backup/UserData/user/trophy");
-      copy_dir("/user/license", "/mnt/usb1/PS4/Backup/UserData/user/license");
-      copy_dir("/user/settings", "/mnt/usb1/PS4/Backup/UserData/user/settings");
-      copy_dir("/user/system/webkit/secure", "/mnt/usb1/PS4/Backup/UserData/user/system/webkit/secure");
-      copy_dir("/user/system/webkit/webbrowser", "/mnt/usb1/PS4/Backup/UserData/user/system/webkit/webbrowser");
-      copy_dir("/system_data/priv/home", "/mnt/usb1/PS4/Backup/UserData/system_data/priv/home");
-      copy_dir("/system_data/priv/license", "/mnt/usb1/PS4/Backup/UserData/system_data/priv/license");
-      copy_dir("/system_data/priv/activation", "/mnt/usb1/PS4/Backup/UserData/system_data/priv/activation");
       printf_notification("USB backup complete!");
     }
   } else {
@@ -88,33 +61,6 @@ int _main(struct thread *td) {
     copy_file("/system_data/priv/mms/app.db", "/mnt/usb0/PS4/Backup/app.db");
     copy_file("/system_data/priv/mms/addcont.db", "/mnt/usb0/PS4/Backup/addcont.db");
     copy_file("/system_data/priv/mms/av_content_bg.db", "/mnt/usb0/PS4/Backup/av_content_bg.db");
-    mkdir("/mnt/usb0/PS4/Backup/UserData/", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/system_data/", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/system_data/savedata", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/system_data/priv", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/system_data/priv/home", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/system_data/priv/license", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/system_data/priv/activation", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/home/", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/trophy", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/license", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/settings", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/system", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/system/webkit", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/system/webkit/secure", 0777);
-    mkdir("/mnt/usb0/PS4/Backup/UserData/user/system/webkit/webbrowser", 0777);
-    printf_notification("Copying user data\nPlease wait...");
-    copy_dir("/system_data/savedata", "/mnt/usb0/PS4/Backup/UserData/system_data/savedata");
-    copy_dir("/user/home", "/mnt/usb0/PS4/Backup/UserData/user/home");
-    copy_dir("/user/trophy", "/mnt/usb0/PS4/Backup/UserData/user/trophy");
-    copy_dir("/user/license", "/mnt/usb0/PS4/Backup/UserData/user/license");
-    copy_dir("/user/settings", "/mnt/usb0/PS4/Backup/UserData/user/settings");
-    copy_dir("/user/system/webkit/secure", "/mnt/usb0/PS4/Backup/UserData/user/system/webkit/secure");
-    copy_dir("/user/system/webkit/webbrowser", "/mnt/usb0/PS4/Backup/UserData/user/system/webkit/webbrowser");
-    copy_dir("/system_data/priv/home", "/mnt/usb0/PS4/Backup/UserData/system_data/priv/home");
-    copy_dir("/system_data/priv/license", "/mnt/usb0/PS4/Backup/UserData/system_data/priv/license");
-    copy_dir("/system_data/priv/activation", "/mnt/usb0/PS4/Backup/UserData/system_data/priv/activation");
     printf_notification("USB backup complete!");
   }
 
